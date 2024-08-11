@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image/FL.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    color: #007bff;
+    margin: 0;
+    padding: 10px 0;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer {
+    background: linear-gradient(90deg, #0060c0, #003d75);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: auto;
+    bottom: 0;
+}
+
+#chatbox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.text-dark {
+    color: #ffffff;
+}
+
+#chat-output {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#chat-output p {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.user {
+    background-color: #b3e5fc;
+    text-align: right;
+}
+
+.bot {
+    background-color: #fce4ec;
+    text-align: left;
+}
+
+#user-input {
+    width: calc(100% - 60px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#send-btn {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#send-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 600px) {
+    #chatbox {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #user-input {
+        width: calc(100% - 70px);
+    }
+}

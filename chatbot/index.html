@@ -4,44 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Literacy Chatbot</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>SHOFCO</h1>
-        <h2>Financial Literacy</h2>
-    </header>
+    <div class="container-fluid d-flex flex-column min-vh-100" style="background: linear-gradient(to bottom, rgba(78, 115, 223, 0.8), rgba(30, 144, 255, 0.8)), url('image/FL.PNG'); background-size: cover; background-position: center;">
+        <!-- Header -->
+        <header class="text-center my-4">
+            <h1 class="text-white">SHOFCO</h1>
+            <h2 class="text-white">Financial Literacy</h2>
+        </header>
+        
+        <!-- Chatbox -->
+        <div id="chatbox" class="flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+            <div id="chat-output" class="container text-dark"></div>
+        </div>
 
-    <div id="chatbox">
-        <div id="chat-output"></div>
-        <input type="text" id="user-input" placeholder="Ask a question...">
-        <button id="send-btn">Send</button>
+        <!-- Search Bar -->
+        <div class="d-flex justify-content-center mb-5">
+            <div class="input-group" style="width: 100%; max-width: 600px;">
+                <input type="text" class="form-control" placeholder="Ask a question..." id="user-input">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" id="send-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-auto text-center py-3 bg-dark text-white">
+            <p>&copy; 2024 SHOFCO. All rights reserved.</p>
+            <p><i>Courtesy of CEO Kennedy Odede.</i></p>
+        </footer>
     </div>
 
-    <footer>
-        <p>&copy; 2024 SHOFCO. All rights reserved.</p>
-        <P><i>courtesy of CEO Kennedy Odede.</i></P>
-    </footer>
-
-    <script src="script.js"></script>
-    <script src="bundle.js"></script>
-
-<script> 
- if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-                    console.log('Service Worker registered with scope:', registration.scope);
-                }, function(error) {
-                    console.log('Service Worker registration failed:', error);
-                });
-            });
-        }
-        </script>
-   
-    
-    
-    
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/service.js"></script>
 </body>
-
 </html>
- 
