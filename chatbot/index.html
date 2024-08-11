@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Literacy Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SHOFCO</h1>
+        <h2>Financial Literacy</h2>
+    </header>
+
+    <div id="chatbox">
+        <div id="chat-output"></div>
+        <input type="text" id="user-input" placeholder="Ask a question...">
+        <button id="send-btn">Send</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 SHOFCO. All rights reserved.</p>
+        <P><i>courtesy of CEO Kennedy Odede.</i></P>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="bundle.js"></script>
+
+<script> 
+ if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                }, function(error) {
+                    console.log('Service Worker registration failed:', error);
+                });
+            });
+        }
+        </script>
+   
+    
+    
+    
+</body>
+
+</html>
+ 
