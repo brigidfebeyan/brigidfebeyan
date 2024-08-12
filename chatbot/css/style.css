@@ -30,16 +30,6 @@ h2 {
     padding: 10px 0;
 }
 
-footer {
-    background: linear-gradient(90deg, #0060c0, #003d75);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: auto;
-    bottom: 0;
-}
-
 #chatbox {
     flex: 1;
     display: flex;
@@ -53,8 +43,17 @@ footer {
     margin: 20px;
 }
 
-.text-dark {
-    color: #ffffff;
+footer {
+    background: linear-gradient(90deg, #003d75, #002a54); /* Darker blue gradient */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    border-top: 1px solid #ccc;
+    position: fixed;
 }
 
 #chat-output {
@@ -67,10 +66,9 @@ footer {
     height: 200px;
     overflow-y: auto;
     margin-bottom: 10px;
-    border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
-    background-color: #ffffff;
-    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+    color: #ffffff; /* White text */
     border-radius: 5px;
     text-align: center;
 }
